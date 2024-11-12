@@ -1,0 +1,35 @@
+#include <iostream>
+#include <math.h>
+using namespace std;
+int main()
+{
+    float Y, x, myVar;
+    cout << "Enter x: ";
+    cin >> x;
+    myVar = 0;
+    for (int k = 1; k <= 5; k++)
+    {
+        myVar += k;
+    }
+    myVar += pow(x, 4);
+    Y = (tan(x) + 5) / myVar;
+    cout << "Y = " << Y << endl;
+    return 0;
+}
+Лістинг коду Z:
+#include <iostream>
+#include <math.h>
+using namespace std;
+int main()
+{
+    float Z, Y, myVar = 1;
+    cout << "Enter Y: ";
+    cin >> Y;
+    for (int i = 1; i <= 5; i++) 
+    {
+        myVar *= i;
+    }
+    Z = (cos(myVar) + 2 * sin(Y)) / (pow(Y, 2) + 5);
+    cout << "Z = " << Z << endl;
+    return 0;
+}
